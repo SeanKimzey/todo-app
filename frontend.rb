@@ -1,6 +1,6 @@
 require 'Unirest'
 
-response = Unirest.patch('http://localhost:3000/todolist/5')
+response = Unirest.post('http://localhost:3000/todolist')
 
 
 puts JSON.pretty_generate(response.body)

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'todolist/:id'=>'todos#show'
   post 'todolist' => 'todos#create'
   patch 'todolist/:id' => 'todos#update'
+  delete 'todolist/:id' => 'todos#destroy'
 end
